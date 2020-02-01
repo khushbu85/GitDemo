@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -15,6 +16,7 @@ public class MyTest {
 		driver =  new ChromeDriver();
 		
 		driver.get("http://www.google.com");
+		driver.findElement(By.id("Email")).sendKeys("abcde@gmail.com");
 		driver.quit();
 	}
 
